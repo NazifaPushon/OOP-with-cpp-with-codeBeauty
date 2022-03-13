@@ -7,6 +7,12 @@ class Employee{
     string company;
     int age;
 
+    Employee(string employeeName, string employeeCompany, int employeeAge){
+        Name = employeeName;
+        company = employeeCompany;
+        age = employeeAge;
+    };
+
     void IntroduceYourSalf(){
         cout << "Name - " << Name << endl;
         cout << "Company - " << company << endl;
@@ -15,15 +21,9 @@ class Employee{
 };
 
 int main(){
-    Employee Afsan;
-    Afsan.Name = "Afsan Nayem";
-    Afsan.company = "Amar Mon";
-    Afsan.age = 15;
+    Employee Afsan("Afsan Nayem" , "Amar Mon" ,  15);
     Afsan.IntroduceYourSalf();
 
-    Employee Rafsan;
-    Rafsan.Name = "Rafsan Alom";
-    Rafsan.company = "Amar buker ba pase 🥰";
-    Rafsan.age = 15;
+    Employee Rafsan("Rafsan Alom","Amar buker ba pase 🥰",15);
     Rafsan.IntroduceYourSalf();
 }
